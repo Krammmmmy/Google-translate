@@ -118,7 +118,7 @@ select {
 
 textarea, #lyrics-output {
     width: 100%;
-    height: 100px;
+    height: 200px;
     padding: 10px;
     border: none;
     resize: none;
