@@ -124,6 +124,7 @@ textarea, #lyrics-output {
     resize: none;
     box-sizing: border-box;
     margin-top: 10px;
+    font-family: Arial, sans-serif;
 }
 
 #lyrics-output {
