@@ -1,0 +1,54 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relapse - Song Title to Lyrics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="translator-container">
+        <div class="header">
+            <img src="google_translate_logo.png" alt="Relapse Logo" class="logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Google Translate">
+            <button id="search-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon">
+            </button>
+        </div>
+        <div class="tabs">
+            <div class="tab active">All</div>
+            <div class="tab">Images</div>
+            <div class="tab">Shopping</div>
+            <div class="tab">Short videos</div>
+            <div class="tab">Videos</div>
+            <div class="tab">Forums</div>
+            <div class="tab">Web</div>
+        </div>
+        <div class="translator-box">
+            <div class="input-section">
+                <select>
+                    <option>English</option>
+                    <option>Tagalog</option>
+                </select>
+                <textarea id="song-title" placeholder="Enter text"></textarea>
+            </div>
+            <span>⇄</span>
+            <div class="output-section">
+                <select>
+                    <option>Tagalog</option>
+                    <option>Relapse</option>
+                    <option>English</option>
+                </select>
+                <div id="lyrics-output"></div>
+            </div>
+        </div>
+        <button id="translate-btn">Translate</button>
+        <input type="range" id="delay-slider" min="100" max="2000" step="50" value="1000">
+        <label for="delay-slider">Delay: <span id="delay-value">1000ms</span></label>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

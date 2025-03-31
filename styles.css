@@ -1,0 +1,168 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.translator-container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 5vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    padding: 5px 10px;
+    background: white;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 24px;
+}
+
+.search-bar button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.tab {
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    transition: color 0.3s ease;
+    flex: 1;
+    min-width: 20px;
+    text-align: center;
+}
+
+.tab:hover {
+    color: #000;
+}
+
+.tab.active {
+    border-bottom: 3px solid #4285F4;
+    font-weight: bold;
+    color: #000;
+}
+
+.translator-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.input-section, .output-section {
+    width: 100%;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    color: #4285F4;
+}
+
+textarea, #lyrics-output {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    resize: none;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+#lyrics-output {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f1f1f1;
+    text-align: left;
+    margin-top: 10px;
+}
+
+button {
+    background: #4285F4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button:hover {
+    background: #357ae8;
+}
+
+#delay-slider {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .translator-box {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .input-section, .output-section {
+        width: 48%;
+    }
+}
