@@ -141,7 +141,9 @@ textarea, #lyrics-output {
     text-align: left;
     margin-top: 10px;
 }
-
+option {
+    color: #000;
+}
 button {
     background: #4285F4;
     color: white;
