@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener("DOMContentLoaded", function() {
     const translateBtn = document.getElementById("translate-btn");
     const songTitleInput = document.getElementById("song-title");
@@ -31,16 +30,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function displayLyrics(lyrics) {
         lyricsOutput.textContent = "";
-        let words = lyrics.split(" ");
         let index = 0;
 
-        function showNextWord() {
-            if (index < words.length) {
-                lyricsOutput.textContent += words[index] + " ";
+        function showNextLetter() {
+            if (index < lyrics.length) {
+                lyricsOutput.textContent += lyrics[index];
                 index++;
-                setTimeout(showNextWord, parseInt(delaySlider.value));
+                setTimeout(showNextLetter, parseInt(delaySlider.value));
             }
         }
-        showNextWord();
+        showNextLetter();
     }
 });
